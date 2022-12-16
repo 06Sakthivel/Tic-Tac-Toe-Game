@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bangers", sans-serif;
+}
+
+.tic-tac-toe {
+  height: 100vh;
+}
+
+.game-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+.game {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.status-bar {
+  display: flex;
+
+  align-items: center;
+  background-color: #fff;
+  height: 40px;
+  border-radius: 4px;
+  padding: 0 5px;
+}
+
+.x {
+  color: #0ca678;
+  padding: 5px 10px;
+  flex: 1;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+.o {
+  color: #0ca678;
+  padding: 5px 10px;
+  flex: 1;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.x.active {
+  color: #fff;
+  background-color: #0ca678;
+}
+
+.o.active {
+  color: #fff;
+  background-color: #0ca678;
+}
+
+.cell-container {
+  width: 225px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+  width: 75px;
+  height: 75px;
+  box-shadow: 5px 5px 12px rgb(0, 0, 0, 0.16),
+    inset 5px 5px 12px rgba(255, 255, 255, 0.575);
+  margin: 1.2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+#status {
+  font-size: 28px;
+}
+
+#reset {
+  background-color: #12b886;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
